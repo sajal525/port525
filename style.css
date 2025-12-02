@@ -1,0 +1,192 @@
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #3c5770;
+    --accent-color: #1d69a3;
+    --a: #02eeff;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+/* font imports (keeps your original choices but using correct Google API URLs) */
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Edu+SA+Hand:wght@400..700&family=Graduate&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Body background (relative path) */
+body {
+    background-image: url('Assets/50.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: var(--primary-text-color);
+}
+
+/* spacing */
+.padtop {
+    padding-top: 20px;
+}
+
+/* Keep original Box class (capital B) you used in HTML */
+.Box {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-block: 20px;
+    background: rgba(255,255,255,0.02); /* slight tint so cards read on varying backgrounds */
+}
+
+/* Also include lowercase .box as a safe alias so future styles/tools don't break */
+.box {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-block: 20px;
+    background: rgba(255,255,255,0.02);
+}
+
+.Box:hover,
+.box:hover {
+    transform: scale(1.01);
+    transition: transform 0.4s ease;
+}
+
+/* panels that sit on top of the background */
+.my-body {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.your-body {
+    padding: 20px;
+    background-image: url('Assets/49.jpg');
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ours-body {
+    background-image: url('Assets/60.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 9px;
+    padding: 20px;
+}
+
+/* fonts — keep your original names */
+.roboto-font {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.bit {
+    /* your original used Bitcount Grid Double; if the font doesn't load, fallback to Graduate */
+    font-family: 'Bitcount Grid Double', 'Graduate', Arial, sans-serif;
+}
+
+.hi-font {
+    font-family: 'Edu SA Hand', 'Graduate', cursive;
+}
+
+.kamaha-font {
+    font-family: 'Roboto Serif', Arial, sans-serif;
+}
+
+.ola-font {
+    /* original looked like a typo — keep safe fallback */
+    font-family: 'Roboto Serif', Arial, sans-serif;
+}
+
+/* margins you used */
+.mbs-1 {
+    margin-bottom: 165px !important;
+}
+.mts-1 {
+    margin-top: 120px !important;
+}
+
+/* feature covers (use relative asset paths) */
+.cover1 {
+    background-image: url('Assets/44.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    border-radius: 7px;
+}
+
+.cover2 {
+    background-image: url('Assets/45.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    border-radius: 7px;
+}
+
+.cover3 {
+    background-image: url('Assets/46.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    border-radius: 7px;
+}
+
+.cover4 {
+    background-image: url('Assets/47.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    border-radius: 7px;
+}
+
+/* images used in the featurettes */
+.omg {
+    height: auto;
+    width: 280px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+/* smaller spacing utilities */
+.mts-2 {
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+}
+.mls-2 {
+    margin-left: 140px !important;
+}
+.mls-3 {
+    margin-left: 440px !important;
+}
+
+/* nav background (relative) */
+nav {
+    background-image: url('Assets/60.jpg');
+    background-size: cover;
+}
+
+/* small responsive tweaks so your large margins don't break on small screens */
+@media (max-width: 992px) {
+    .mbs-1 { margin-bottom: 80px !important; }
+    .mts-1 { margin-top: 60px !important; }
+    .omg { width: 100%; max-width: 320px; }
+}
+
+/* accessibility & fallback helpers */
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* small utility to ensure stretched-link works well on cards */
+.card {
+  position: relative;
+}
+
+/* end of stylesheet */
